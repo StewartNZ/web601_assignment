@@ -5,14 +5,14 @@ import NotFound from '../pages/NotFound'
 
 function Routes(props) {
 
-    
+
     const mapped = props.pages.map(page => <Route key={page.path} exact path={page.path} component={page.pageComponent} />)
 
     return (
         <Switch>
-          {mapped}
+            {mapped}
 
-          <Route path="/" component={NotFound} />
+            <Route path="/" component={NotFound} />
         </Switch>
     )
 }

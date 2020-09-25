@@ -7,19 +7,37 @@ import Routes from './components/Routes'
 
 import Home from './pages/Home'
 import About from './pages/About'
+import Login from './pages/Login'
+import Contacts from './pages/Contacts'
+import Related from './pages/Related'
 
 function App() {
 
   const pages = [
     {
-        path: '/',
-        title: 'Home',
-        pageComponent: Home
+      path: '/',
+      title: 'Home',
+      pageComponent: Home
     },
     {
-        path: '/about',
-        title: 'About',
-        pageComponent: About
+      path: '/about',
+      title: 'About',
+      pageComponent: About
+    },
+    {
+      path: '/login',
+      title: 'Login',
+      pageComponent: Login
+    },
+    {
+      path: '/contacts',
+      title: 'Contacts',
+      pageComponent: Contacts
+    },
+    {
+      path: '/related',
+      title: 'Related',
+      pageComponent: Related
     }
   ]
 
