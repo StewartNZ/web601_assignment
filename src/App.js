@@ -11,7 +11,9 @@ import Login from './pages/Login'
 import Contacts from './pages/Contacts'
 import Related from './pages/Related'
 
-function App() {
+import Store from "./components/Store";
+
+const App = () => {
 
   const pages = [
     {
@@ -42,13 +44,15 @@ function App() {
   ]
 
   return (
-    <Router>
-      <div className="App">
-        <NavBar pages={pages} />
-        <Routes pages={pages} />
-        
-      </div>
-    </Router>
+    <Store>
+      <Router basename="/~stewart-nelson/client">
+        <div className="App">
+          <NavBar pages={pages} />
+          <Routes pages={pages} />
+          
+        </div>
+      </Router>
+    </Store>
   );
 }
 

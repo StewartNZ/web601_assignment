@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import LoginWithContext from "../components/LoginWithContext";
 
 function Login() {
     return (
         <div>
             <h1>Login Page</h1>
-            <p>Blah stuff to come</p>
+            <LoginWithContext />
         </div>
     )
 }
